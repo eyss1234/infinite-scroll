@@ -5,9 +5,9 @@ let photosArray = [];
 
 // Unsplash API
 const count = 10;
-const apiKey = '';
+
 const topic = 'architecture'
-const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&topic=${topic}&count=${count}`;
+const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${APIKEY}&topic=${topic}&count=${count}`;
 
 // Helper function to setAttributer on DOM elements
 const setAttributes = (element, attributes) => {
