@@ -1,6 +1,7 @@
 const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
 
+APIKEY='ls3Iz-plZLlbPLZ5xNeGxCdav1i2l5JYs107cTMkTLw'
 
 
 let ready = false;
@@ -9,9 +10,9 @@ let totalImages = 0;
 let photosArray = [];
 
 // Unsplash API
-const count = 30;
+let count = 5;
 const topic = 'architecture'
-const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${APIKEY}&topic=${topic}&count=${count}`;
+let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${APIKEY}&topic=${topic}&count=${count}`;
 
 // Check if all images were loaded 
 const imageLoaded = () => {
@@ -19,6 +20,7 @@ const imageLoaded = () => {
   if (imagesLoaded === totalImages) {
     ready = true;
     loader.hidden = true;
+    count = 30;
   }
 }
 
