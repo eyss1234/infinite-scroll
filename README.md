@@ -1,6 +1,9 @@
 ## infinite-scroll
   Simple javascript project to display an infinite scroll one page website using unsplash api
+  
   Built using Fetch, Async/Await, Unsplash API, DOM, Scroll Event Listener
+  
+  This exercise is based on [Zero to Mastery Academy](https://zerotomastery.io/) course
   
 ### Features
 - Initially display 5 requested images from api
